@@ -1,0 +1,41 @@
+{
+  "name": "books_api",
+  "version": "1.0.0",
+  "description": "RESTful API for control of book's collection",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon app.ts",
+    "build": "npx tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexxxpo/books_api.git"
+  },
+  "author": "alexxxpo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexxxpo/books_api/issues"
+  },
+  "homepage": "https://github.com/alexxxpo/books_api#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.1.0",
+    "@types/nodemailer": "^6.4.15",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "prisma": "^5.18.0",
+    "@prisma/client": "^5.18.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14"
+  }
+}
